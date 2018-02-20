@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.eddyandjevonsapplicationofwonders.MainActivity">
+
+    <ImageView
+        android:src="@drawable/supermarioworld"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/header_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to this random app!"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textColor="#FFD600"
+        />
+
+    <Button
+        android:id="@+id/goto_button"
+        android:text="Go to Sound!"
+        android:layout_marginTop="1sp"
+        android:layout_below="@id/header_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D32F2F"
+        android:maxHeight="2dp"
+        android:maxWidth="1dp"
+        android:onClick="openAudioPlay"/>
+
+    <Button
+        android:id="@+id/mailing_button"
+        android:text="Email this app"
+        android:layout_marginTop="100sp"
+        android:layout_below="@id/goto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="1dp"
+        android:maxWidth="1dp"
+        android:background="#D32F2F"
+        android:onClick="openEmailThisApp"/>
+
+
+
+</RelativeLayout>
